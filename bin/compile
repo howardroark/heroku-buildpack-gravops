@@ -264,6 +264,9 @@ cd $build_dir/$composer_bindir
 ln -fs $relbins .
 cd $build_dir
 
+mkdir $build_dir/grav-admin
+touch $build_dir/grav-admin/index.php
+
 if [[ ! -f "Procfile" ]]; then
     echo "web: $composer_bindir/heroku-$engine-apache2" > Procfile
     notice_inline "No Procfile, using 'web: $composer_bindir/heroku-$engine-apache2'."
@@ -275,5 +278,3 @@ install_blackfire_ext
 # special treatment for New Relic; we enable it if we detect a license key for it
 install_newrelic_ext
 install_newrelic_userini
-
-install_grav

@@ -2,5 +2,5 @@
 
 install_grav() {
     mkdir -p /app/grav-admin
-    touch /grav-admin/index.php
+    touch /app/grav-admin/index.php
 }

@@ -1,6 +1,7 @@
 {
     "name": "howardroark/gravops",
     "require": {
+        "ext-gd": "*",
         "ext-mbstring": "*",
         "ext-openssl": "*",
         "ext-curl": "*"

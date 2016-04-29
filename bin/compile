@@ -19,6 +19,9 @@ bp_dir=$(cd $(dirname $0); cd ..; pwd)
 # convenience functions
 source $bp_dir/bin/util/common.sh
 
+# grav
+source $bp_dir/bin/util/grav.sh
+
 # for extensions that need special treatment
 source $bp_dir/bin/util/newrelic.sh
 source $bp_dir/bin/util/blackfire.sh
@@ -272,3 +275,5 @@ install_blackfire_ext
 # special treatment for New Relic; we enable it if we detect a license key for it
 install_newrelic_ext
 install_newrelic_userini
+
+install_grav

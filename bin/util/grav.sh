@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 install_grav() {
-    mkdir -p /grav-admin
+    mkdir -p /app/grav-admin
     touch /grav-admin/index.php
 }

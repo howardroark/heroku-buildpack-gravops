@@ -264,8 +264,7 @@ cd $build_dir/$composer_bindir
 ln -fs $relbins .
 cd $build_dir
 
-mkdir $build_dir/grav-admin
-touch $build_dir/grav-admin/index.php
+install_grav
 
 if [[ ! -f "Procfile" ]]; then
     echo "web: $composer_bindir/heroku-$engine-apache2" > Procfile

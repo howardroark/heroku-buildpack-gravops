@@ -5,6 +5,11 @@
     "homepage": "https://github.com/heroku/heroku-buildpack-php",
     "type": "library",
     "license": "MIT",
+    "require": {
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-curl": "*"
+    },
     "authors": [
         {
             "name": "David Zuelke",
